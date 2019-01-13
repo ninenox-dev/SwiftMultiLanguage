@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8N0-aa-cCM">
+                                <rect key="frame" x="144" y="174" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="en0-Th-UGh">
+                                <rect key="frame" x="132" y="365" width="111" height="30"/>
+                                <state key="normal" title="English"/>
+                                <connections>
+                                    <action selector="clickEnglish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nzp-GR-MSl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0m-jc-zQN">
+                                <rect key="frame" x="132" y="269" width="111" height="30"/>
+                                <state key="normal" title="Thai"/>
+                                <connections>
+                                    <action selector="clickThai:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z9s-6Z-IOb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8N0-aa-cCM" firstAttribute="centerX" secondItem="P0m-jc-zQN" secondAttribute="centerX" id="4gB-b6-3bq"/>
+                            <constraint firstItem="8N0-aa-cCM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="154" id="Mlx-Lb-zPI"/>
+                            <constraint firstItem="en0-Th-UGh" firstAttribute="top" secondItem="P0m-jc-zQN" secondAttribute="bottom" constant="66" id="U2O-bw-MoB"/>
+                            <constraint firstItem="P0m-jc-zQN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="Vfp-6K-Ime"/>
+                            <constraint firstItem="P0m-jc-zQN" firstAttribute="top" secondItem="8N0-aa-cCM" secondAttribute="bottom" constant="74" id="Y0y-a9-EFa"/>
+                            <constraint firstItem="8N0-aa-cCM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="exx-b1-Zzr"/>
+                            <constraint firstItem="8N0-aa-cCM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="iqW-5K-1jW"/>
+                            <constraint firstItem="P0m-jc-zQN" firstAttribute="centerX" secondItem="en0-Th-UGh" secondAttribute="centerX" id="n30-pD-aZF"/>
+                            <constraint firstItem="en0-Th-UGh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="obn-yQ-TPc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="8N0-aa-cCM" id="dRG-E1-Op2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>
